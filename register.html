@@ -19,7 +19,52 @@
 
     <main>
         <h2>Event Registration</h2>
-        <!-- Registration form content will be added here -->
+        <p>Fill out the form below to register for upcoming campus events.</p>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="e.g. Karma Tenzin" required><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="student@jnec.edu.bt" required><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="17XXXXXX"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Event Selection &amp; Preferences</legend>
+
+                <label for="event-select">Select Event:</label><br>
+                <select id="event-select" name="event" required>
+                    <option value="">-- Select an Event --</option>
+                    <option value="web-dev">Web Development Bootcamp</option>
+                    <option value="robotics">Robotics &amp; IoT Expo</option>
+                    <option value="cultural">Annual Cultural Festival</option>
+                </select><br><br>
+
+                <label>Participant Role:</label><br>
+                <input type="radio" id="student" name="role" value="student" checked>
+                <label for="student">JNEC Student</label><br>
+                <input type="radio" id="faculty" name="role" value="faculty">
+                <label for="faculty">Faculty / Staff</label><br>
+                <input type="radio" id="guest" name="role" value="guest">
+                <label for="guest">External Guest</label><br><br>
+
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">I agree to abide by the event participation guidelines.</label><br><br>
+
+                <label for="notes">Additional Comments / Requirements:</label><br>
+                <textarea id="notes" name="notes" rows="4" cols="40" placeholder="Dietary restrictions, accessibility requests, etc."></textarea><br><br>
+            </fieldset>
+
+            <br>
+            <button type="submit">Submit Registration</button>
+            <button type="reset">Reset Form</button>
+        </form>
     </main>
 
     <footer>
